@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Set the screen size for iPhone 6 */
+.chatbot-container {
+    width: 375px;
+    height: 667px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative; /* This is important for the button positioning */
+}
+
+.chat-window {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+#user-input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 8px 15px;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+#upload-btn, #send-btn {
+    border: none;
+    background-color: #007aff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+#upload-btn {
+    background-color: #e0e0e0;
+    color: #333;
+    margin-right: 5px;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #007aff;
+    color: white;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #e0e0e0;
+    color: black;
+    align-self: flex-start;
+}
+
+.image-message {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 5px;
+}
